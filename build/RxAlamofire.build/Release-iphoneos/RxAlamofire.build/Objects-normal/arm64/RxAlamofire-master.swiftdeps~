@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "e5e4c10c7ed60ba2836e1d47363f839d"
+build_time: [556012548, 316507000]
+inputs:
+  "/Users/karsa/Desktop/RxAlamofire/RxAlamofire/RAHttpClient.swift": [9223372036854775807, 0]

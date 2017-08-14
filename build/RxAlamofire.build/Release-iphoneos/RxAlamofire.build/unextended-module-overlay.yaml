@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/karsa/Desktop/RxAlamofire/build/Release-iphoneos/RxAlamofire.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/karsa/Desktop/RxAlamofire/build/RxAlamofire.build/Release-iphoneos/RxAlamofire.build/unextended-module.modulemap',
+    }]
+  }]
+}
