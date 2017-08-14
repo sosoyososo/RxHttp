@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4789B2C01F418D8600B12452"
-               BuildableName = "RxAlamofire.framework"
-               BlueprintName = "RxAlamofire"
-               ReferencedContainer = "container:RxAlamofire.xcodeproj">
+               BuildableName = "RxHttp.framework"
+               BlueprintName = "RxHttp"
+               ReferencedContainer = "container:RxHttp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4789B2C91F418D8600B12452"
-               BuildableName = "RxAlamofireTests.xctest"
-               BlueprintName = "RxAlamofireTests"
-               ReferencedContainer = "container:RxAlamofire.xcodeproj">
+               BuildableName = "RxHttpTests.xctest"
+               BlueprintName = "RxHttpTests"
+               ReferencedContainer = "container:RxHttp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4789B2C01F418D8600B12452"
-            BuildableName = "RxAlamofire.framework"
-            BlueprintName = "RxAlamofire"
-            ReferencedContainer = "container:RxAlamofire.xcodeproj">
+            BuildableName = "RxHttp.framework"
+            BlueprintName = "RxHttp"
+            ReferencedContainer = "container:RxHttp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4789B2C01F418D8600B12452"
-            BuildableName = "RxAlamofire.framework"
-            BlueprintName = "RxAlamofire"
-            ReferencedContainer = "container:RxAlamofire.xcodeproj">
+            BuildableName = "RxHttp.framework"
+            BlueprintName = "RxHttp"
+            ReferencedContainer = "container:RxHttp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4789B2C01F418D8600B12452"
-            BuildableName = "RxAlamofire.framework"
-            BlueprintName = "RxAlamofire"
-            ReferencedContainer = "container:RxAlamofire.xcodeproj">
+            BuildableName = "RxHttp.framework"
+            BlueprintName = "RxHttp"
+            ReferencedContainer = "container:RxHttp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

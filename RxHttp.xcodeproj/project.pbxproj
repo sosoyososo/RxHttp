@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4789B2CB1F418D8600B12452 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4789B2C11F418D8600B12452 /* RxAlamofire.framework */; };
+		4789B2CB1F418D8600B12452 /* RxHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4789B2C11F418D8600B12452 /* RxHttp.framework */; };
 		4789B2D01F418D8600B12452 /* RxAlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789B2CF1F418D8600B12452 /* RxAlamofireTests.swift */; };
-		4789B2D21F418D8600B12452 /* RxAlamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = 4789B2C41F418D8600B12452 /* RxAlamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4789B2D21F418D8600B12452 /* RxHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4789B2C41F418D8600B12452 /* RxHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4789B2DD1F418E2C00B12452 /* RAHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789B2DC1F418E2C00B12452 /* RAHttpClient.swift */; };
 		4789B2E31F418E5800B12452 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4789B2DF1F418E5800B12452 /* Alamofire.framework */; };
 		4789B2E41F418E5800B12452 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4789B2E01F418E5800B12452 /* RxBlocking.framework */; };
@@ -30,10 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4789B2C11F418D8600B12452 /* RxAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4789B2C41F418D8600B12452 /* RxAlamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAlamofire.h; sourceTree = "<group>"; };
+		4789B2C11F418D8600B12452 /* RxHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4789B2C41F418D8600B12452 /* RxHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxHttp.h; sourceTree = "<group>"; };
 		4789B2C51F418D8600B12452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4789B2CA1F418D8600B12452 /* RxAlamofireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxAlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4789B2CA1F418D8600B12452 /* RxHttpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxHttpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4789B2CF1F418D8600B12452 /* RxAlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireTests.swift; sourceTree = "<group>"; };
 		4789B2D11F418D8600B12452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4789B2DC1F418E2C00B12452 /* RAHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAHttpClient.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4789B2CB1F418D8600B12452 /* RxAlamofire.framework in Frameworks */,
+				4789B2CB1F418D8600B12452 /* RxHttp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 		4789B2B71F418D8600B12452 = {
 			isa = PBXGroup;
 			children = (
-				4789B2C31F418D8600B12452 /* RxAlamofire */,
+				4789B2C31F418D8600B12452 /* RxHttp */,
 				4789B2CE1F418D8600B12452 /* RxAlamofireTests */,
 				4789B2C21F418D8600B12452 /* Products */,
 				4789B2DE1F418E5700B12452 /* Frameworks */,
@@ -82,20 +82,21 @@
 		4789B2C21F418D8600B12452 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4789B2C11F418D8600B12452 /* RxAlamofire.framework */,
-				4789B2CA1F418D8600B12452 /* RxAlamofireTests.xctest */,
+				4789B2C11F418D8600B12452 /* RxHttp.framework */,
+				4789B2CA1F418D8600B12452 /* RxHttpTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4789B2C31F418D8600B12452 /* RxAlamofire */ = {
+		4789B2C31F418D8600B12452 /* RxHttp */ = {
 			isa = PBXGroup;
 			children = (
-				4789B2C41F418D8600B12452 /* RxAlamofire.h */,
+				4789B2C41F418D8600B12452 /* RxHttp.h */,
 				4789B2C51F418D8600B12452 /* Info.plist */,
 				4789B2DC1F418E2C00B12452 /* RAHttpClient.swift */,
 				4789B2EC1F419B3000B12452 /* RAError.swift */,
 			);
+			name = RxHttp;
 			path = RxAlamofire;
 			sourceTree = "<group>";
 		};
@@ -127,16 +128,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4789B2D21F418D8600B12452 /* RxAlamofire.h in Headers */,
+				4789B2D21F418D8600B12452 /* RxHttp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4789B2C01F418D8600B12452 /* RxAlamofire */ = {
+		4789B2C01F418D8600B12452 /* RxHttp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4789B2D51F418D8600B12452 /* Build configuration list for PBXNativeTarget "RxAlamofire" */;
+			buildConfigurationList = 4789B2D51F418D8600B12452 /* Build configuration list for PBXNativeTarget "RxHttp" */;
 			buildPhases = (
 				4789B2BC1F418D8600B12452 /* Sources */,
 				4789B2BD1F418D8600B12452 /* Frameworks */,
@@ -148,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = RxAlamofire;
+			name = RxHttp;
 			productName = RxAlamofire;
-			productReference = 4789B2C11F418D8600B12452 /* RxAlamofire.framework */;
+			productReference = 4789B2C11F418D8600B12452 /* RxHttp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4789B2C91F418D8600B12452 /* RxAlamofireTests */ = {
+		4789B2C91F418D8600B12452 /* RxHttpTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4789B2D81F418D8600B12452 /* Build configuration list for PBXNativeTarget "RxAlamofireTests" */;
+			buildConfigurationList = 4789B2D81F418D8600B12452 /* Build configuration list for PBXNativeTarget "RxHttpTests" */;
 			buildPhases = (
 				4789B2C61F418D8600B12452 /* Sources */,
 				4789B2C71F418D8600B12452 /* Frameworks */,
@@ -166,9 +167,9 @@
 			dependencies = (
 				4789B2CD1F418D8600B12452 /* PBXTargetDependency */,
 			);
-			name = RxAlamofireTests;
+			name = RxHttpTests;
 			productName = RxAlamofireTests;
-			productReference = 4789B2CA1F418D8600B12452 /* RxAlamofireTests.xctest */;
+			productReference = 4789B2CA1F418D8600B12452 /* RxHttpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4789B2BB1F418D8600B12452 /* Build configuration list for PBXProject "RxAlamofire" */;
+			buildConfigurationList = 4789B2BB1F418D8600B12452 /* Build configuration list for PBXProject "RxHttp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -204,8 +205,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4789B2C01F418D8600B12452 /* RxAlamofire */,
-				4789B2C91F418D8600B12452 /* RxAlamofireTests */,
+				4789B2C01F418D8600B12452 /* RxHttp */,
+				4789B2C91F418D8600B12452 /* RxHttpTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,7 +272,7 @@
 /* Begin PBXTargetDependency section */
 		4789B2CD1F418D8600B12452 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4789B2C01F418D8600B12452 /* RxAlamofire */;
+			target = 4789B2C01F418D8600B12452 /* RxHttp */;
 			targetProxy = 4789B2CC1F418D8600B12452 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -450,7 +451,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4789B2BB1F418D8600B12452 /* Build configuration list for PBXProject "RxAlamofire" */ = {
+		4789B2BB1F418D8600B12452 /* Build configuration list for PBXProject "RxHttp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4789B2D31F418D8600B12452 /* Debug */,
@@ -459,21 +460,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4789B2D51F418D8600B12452 /* Build configuration list for PBXNativeTarget "RxAlamofire" */ = {
+		4789B2D51F418D8600B12452 /* Build configuration list for PBXNativeTarget "RxHttp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4789B2D61F418D8600B12452 /* Debug */,
 				4789B2D71F418D8600B12452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		4789B2D81F418D8600B12452 /* Build configuration list for PBXNativeTarget "RxAlamofireTests" */ = {
+		4789B2D81F418D8600B12452 /* Build configuration list for PBXNativeTarget "RxHttpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4789B2D91F418D8600B12452 /* Debug */,
 				4789B2DA1F418D8600B12452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
