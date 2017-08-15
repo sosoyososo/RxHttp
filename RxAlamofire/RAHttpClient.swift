@@ -65,9 +65,9 @@ open class RAHttpJsonClient {
         , encoding: ParameterEncoding = JSONEncoding.default
         , headers: HTTPHeaders? = nil
         , requestChecker : @escaping (Alamofire.DataRequest)->RAError? = {_ in return nil}
-        , requestConfig : @escaping (Alamofire.DataRequest)->() = {_ in}) -> Observable<[M]> {
+        , requestConfig : @escaping (Alamofire.DataRequest)->() = {_ in}) -> Observable<M> {
         
-        let observable = Observable<[M]>.create { (observer) -> Disposable in
+        let observable = Observable<M>.create { (observer) -> Disposable in
             _=RAHttpJsonClient.ObservableJsonRequest(url
                 , method: method
                 , parameters: parameters
@@ -75,12 +75,9 @@ open class RAHttpJsonClient {
                 , headers: headers
                 , requestChecker: requestChecker
                 , requestConfig: requestConfig).subscribe(onNext: { (json) in
-                if let arr = json as? [[String:Any]] {
-                    observer.onNext(Array<M>.init(JSONArray: arr))
-                    observer.onCompleted()
-                } else if let json = json as? [String:Any] {
+                if let json = json as? [String:Any] {
                     if let m = M(JSON: json) {
-                        observer.onNext([m])
+                        observer.onNext(m)
                         observer.onCompleted()
                     } else {
                         observer.onError(RAError.init("Json", message: "Map to Object Failed"))
