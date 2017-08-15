@@ -34,7 +34,7 @@ open class RAHttpJsonClient {
             }
             let request = Alamofire.request(url
                 , method: method
-                , parameters: parameters
+                , parameters: relParameters
                 , encoding: encoding
                 , headers: headers)
             if let err = requestChecker(request) {
