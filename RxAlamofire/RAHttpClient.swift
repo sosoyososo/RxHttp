@@ -65,6 +65,46 @@ open class RAHttpJsonClient {
         , encoding: ParameterEncoding = JSONEncoding.default
         , headers: HTTPHeaders? = nil
         , requestChecker : @escaping (Alamofire.DataRequest)->RAError? = {_ in return nil}
+        , requestConfig : @escaping (Alamofire.DataRequest)->() = {_ in}) -> Observable<[M]> {
+        
+        let observable = Observable<[M]>.create { (observer) -> Disposable in
+            _=RAHttpJsonClient.ObservableJsonRequest(url
+                , method: method
+                , parameters: parameters
+                , encoding: encoding
+                , headers: headers
+                , requestChecker: requestChecker
+                , requestConfig: requestConfig).subscribe(onNext: { (json) in
+                    if let json = json as? [String:Any] {
+                        if let m = M(JSON: json) {
+                            observer.onNext([m])
+                            observer.onCompleted()
+                        } else {
+                            observer.onError(RAError.init("Json", message: "Map to Object Failed"))
+                        }
+                    } else if let array = json as? [[String:Any]] {
+                        let list = Mapper<M>.init().mapArray(JSONArray: array)
+                        observer.onNext(list)
+                        observer.onCompleted()
+                    }
+                }, onError: { err in
+                    observer.onError(err)
+                }, onCompleted: {
+                    observer.onCompleted()
+                })
+            
+            return Disposables.create()
+        }
+        return observable
+    }
+
+    
+    public class func ObservableJsonObjectRequest<M : Mappable>(_ url: URLConvertible
+        , method: Alamofire.HTTPMethod = .get
+        , parameters: Parameters? = nil
+        , encoding: ParameterEncoding = JSONEncoding.default
+        , headers: HTTPHeaders? = nil
+        , requestChecker : @escaping (Alamofire.DataRequest)->RAError? = {_ in return nil}
         , requestConfig : @escaping (Alamofire.DataRequest)->() = {_ in}) -> Observable<M> {
         
         let observable = Observable<M>.create { (observer) -> Disposable in
